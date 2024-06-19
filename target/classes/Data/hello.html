@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模板邮箱</title>
+
+    <style>
+        body,html,div,ul,li,button,p,img,h1,h2,h3,h4,h5,h6 {
+            margin: 0;
+            padding: 0;
+        }
+
+        body,html {
+            background: #fff;
+            line-height: 1.8;
+        }
+
+        h1,h2,h3,h4,h5,h6 {
+            line-height: 1.8;
+        }
+
+        .email_warp {
+            height: 100vh;
+            min-height: 500px;
+            font-size: 14px;
+            color: #212121;
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+        }
+
+        .logo {
+            margin: 3em auto;
+            width: 200px;
+            height: 60px;
+        }
+
+        h1.email-title {
+            font-size: 26px;
+            font-weight: 500;
+            margin-bottom: 15px;
+            color: #252525;
+        }
+
+        a.links_btn {
+            border: 0;
+            background: #4C84FF;
+            color: #fff;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            font-size: 16px;
+            margin: 40px auto;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+        }
+
+        .warm_tips {
+            color: #757575;
+            background: #f7f7f7;
+            padding: 20px;
+        }
+
+        .warm_tips .desc {
+            margin-bottom: 20px;
+        }
+
+        .qr_warp {
+            max-width: 140px;
+            margin: 20px auto;
+        }
+
+        .qr_warp img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .email-footer {
+            margin-top: 2em;
+        }
+
+        #reset-password-email {
+            max-width: 500px;
+        }
+        #reset-password-email .accout_email {
+            color: #4C84FF;
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+<section class="email_warp">
+    <div id="reset-password-email">
+
+
+        <h1 class="email-title">
+            尊敬的<span>那尔斯先生</span>您好：
+        </h1>
+        <p>您正在为登录邮箱为文档导航账户重置密码：</p>
+        <b class="accout_email">liheng2137@qq.com</b>
+
+        <p>请注意，如果这不是您本人的操作，请忽略并关闭此邮件。</p>
+        <p>如您确认重置lmliheng的账户密码，请点击下方按钮。</p>
+
+        <a class="links_btn" onclick="window.open('http://liheng.work')">重置密码</a>
+
+        <div class="warm_tips">
+            <div class="desc">
+                为安全起见，以上按钮为一次性链接，且仅在24小时内有效，请您尽快完成操作。
+            </div>
+
+            <p>如有任何疑问或无法完成注册，请通过如下方式与我们联系：</p>
+            <p>邮箱：liheng2137@qq.com</p>
+            <p>微信助理：b13551458597</p>
+
+
+            <p>本邮件由系统自动发送，请勿回复。</p>
+        </div>
+
+        <div class="email-footer">
+            <p>您的智能项目助理</p>
+            <p>小恒</p>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>
+

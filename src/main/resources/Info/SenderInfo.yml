@@ -1,0 +1,12 @@
+to: "2690034441@qq.com" # 收件人邮箱地址
+from: "liheng2137@qq.com" # 发件人邮箱地址
+host: "smtp.qq.com" # SMTP服务器地址
+username: "liheng2137@qq.com" # 发件人邮箱用户名（完整的邮箱地址）
+password: "rxpckvnuzaracfjh" # 发件人邮箱授权码（不是邮箱密码）
+
+邮件服务器属性:
+  smtp主机: "${host}"
+  smtp端口: "465" # 使用SSL时的端口
+  smtp身份验证: "true"
+  smtp套接字工厂端口: "465" # SSL端口
+  smtp套接字工厂类: "javax.net.ssl.SSLSocketFactory" # SSL工厂类
