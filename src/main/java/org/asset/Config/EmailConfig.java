@@ -1,4 +1,4 @@
-package org.aeeset.Config;
+package org.asset.Config;
 
 import java.io.InputStream;
 import java.util.Map;
@@ -12,7 +12,9 @@ public class EmailConfig {
     private String host;
     private String username;
     private String password;
+    private String alias;
     private Properties properties;
+
 
     public EmailConfig() {
         loadConfig();
@@ -28,6 +30,7 @@ public class EmailConfig {
         host = (String) config.get("host");
         username = (String) config.get("username");
         password = (String) config.get("password");
+        alias = (String) config.get("alias");
 
         properties = new Properties();
         properties.put("mail.smtp.host", host);
@@ -43,5 +46,9 @@ public class EmailConfig {
     public String getHost() { return host; }
     public String getUsername() { return username; }
     public String getPassword() { return password; }
+    public String getAlias() { return alias; }
+
     public Properties getProperties() { return properties; }
+
+
 }

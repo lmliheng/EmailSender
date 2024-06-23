@@ -1,7 +1,7 @@
-package org.aeeset;
+package org.asset;
 
-import org.aeeset.Config.EmailConfig;
-import org.aeeset.Utils.EmailSender;
+import org.asset.Config.EmailConfig;
+import org.asset.Utils.EmailSender;
 import javax.mail.MessagingException;
 import java.io.IOException;
 
@@ -17,8 +17,9 @@ public class Bootstrap {
 
         try {
             emailSender.sendEmail(subject, htmlFilePath);
+            System.out.println("完成邮箱发送函数的加载！");
         } catch (MessagingException | IOException e) {
-            e.printStackTrace();
+            e.fillInStackTrace();
         }
     }
 }
