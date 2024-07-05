@@ -17,10 +17,13 @@ public class EmailConfig {
 
 
     public EmailConfig() {
+
         loadConfig();
+
     }
 
     private void loadConfig() {
+
         Yaml yaml = new Yaml();
         InputStream inputStream = EmailConfig.class.getResourceAsStream("/Info/SenderInfo.yml");
         Map<String, Object> config = yaml.load(inputStream);
