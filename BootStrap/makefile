@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -I./includes -Wall -fPIC
-OBJFILES = objs/bootstrap.o 
+OBJFILES = objs/Bootstrap.o 
 TARGET = send
 
 
@@ -9,7 +9,7 @@ all: $(TARGET)
 objs:
 	@mkdir -p objs
 
-objs/bootstrap.o: src/bootstrap.c objs
+objs/Bootstrap.o: src/Bootstrap.c objs
 	$(CC) $(CFLAGS) -c $< -o $@
 
 

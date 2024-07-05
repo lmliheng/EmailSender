@@ -21,7 +21,7 @@
 
 ## 协议
 
-`Eclipse Public License - v 2.0`
+使用`Eclipse Public License - v 2.0`
 
 
 
