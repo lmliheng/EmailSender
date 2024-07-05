@@ -18,6 +18,8 @@ public class Bootstrap {
         try {
             emailSender.sendEmail(subject, htmlFilePath);
             System.out.println("完成邮箱发送函数的加载！");
+
+
         } catch (MessagingException | IOException e) {
             e.fillInStackTrace();
         }
